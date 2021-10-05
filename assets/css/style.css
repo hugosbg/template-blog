@@ -1,0 +1,246 @@
+:root {
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-bg-main: #FAFAFA;
+    --color-bg-header-top: #262626;
+    --color-bg-footer: #141414;
+    --color-border: #E5E5E5;
+    --color-before-news: #A81D1D;
+    --color-grey: #C4C4C4;
+    --color-grey-light: #4D4D4D;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--color-black);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+main {
+    max-width: 1296px;
+    background: var(--color-bg-main);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    min-height: 400px;
+    background: var(--color-bg-footer);
+}
+
+.header__top {
+    max-width: 970px;
+    height: 250px;
+    background: var(--color-bg-header-top);
+    border-radius: 4px;
+    margin-inline: auto;
+    margin-bottom: 3.25rem;
+    margin-top: 2rem;
+}
+
+.header__menu {
+    height: 48px;
+    background: var(--color-black);
+}
+
+.header__search {
+    height: 48px;
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: 1rem;
+}
+
+/* SLIDER */
+
+.slider {
+    position: relative;
+    height: 380px;
+    background: url(../img/COLUNISTAS_BG_NEUTRO_1.svg) no-repeat center center;
+}
+
+.slider__img {
+    position: absolute;
+    right: 11rem;
+    top: 3.5rem;
+}
+
+.slider__content {
+    width: 38%;
+    position: relative;
+}
+
+.slider__title {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 11rem;
+    top: 9rem;
+}
+
+.slider__title h1 {
+    position: relative;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 1rem;
+    padding-left: 1.25rem;
+}
+
+.slider__title h1:before {
+    content: '|';
+    display: block;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slider__title img {
+    vertical-align: top;
+}
+
+.slider__text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--color-grey-light);
+    position: absolute;
+    left: 11rem;
+    top: 13rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.content {
+    flex: 3;
+    padding-left: 10rem;
+    padding-right: 1.5rem;
+}
+
+.sidebar {
+    flex: 1.2;
+    padding-right: 10rem;
+    background: #CB0000;
+}
+
+/* POST */
+
+.post {
+    position: relative;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 2rem;
+}
+
+.post h1 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.post p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.post:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background: var(--color-before-news);
+    border-radius: 4px 0px 0px 4px;
+}
+
+.post__author {
+    margin-bottom: 2rem;
+}
+
+.post__author figure {
+    float: left;
+    margin-right: 10px;
+}
+
+.post__author img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--color-grey);
+}
+
+.post__name {
+    display: block;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.post__date {
+    color: var(--color-grey);
+}
+
+/* ICONS SHARE */
+
+.social {
+    display: flex;
+    list-style: none;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 1rem;
+}
+
+.social li {
+    flex-direction: column;
+}
+
+.social li:not(:first-of-type) {
+    padding-right: 8px;
+}
+
+.social.email {
+    background: url(../img/icon-email.svg) no-repeat center left;
+}
+
+.social.facebook {
+    background: url(../img/icon-facebook.svg) no-repeat center left;
+}
+
+.social.linkedin {
+    background: url(../img/icon-linkedin.svg) no-repeat center left;
+}
+
+.social.messenger {
+    background: url(../img/icon-messenger.svg) no-repeat center left;
+}
+
+.social.twitter {
+    background: url(../img/icon-twitter.svg) no-repeat center left;
+}
+
+.social.whatsapp {
+    background: url(../img/icon-whatsapp.svg) no-repeat center left;
+}
